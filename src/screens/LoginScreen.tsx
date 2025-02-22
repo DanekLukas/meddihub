@@ -17,6 +17,7 @@ import { compare, hash } from "react-native-simple-bcrypt";
 import { useDbContext } from '../contexts/DbContext';
 import { useUserContext } from '../contexts/UserContext';
 import Info from '../components/Info';
+import Layout from '../_layout';
 
 function Login({ navigation }: any): React.JSX.Element {
 
@@ -117,7 +118,7 @@ function Login({ navigation }: any): React.JSX.Element {
   const gpo = " gap-1 overflow-hidden"
 
   return (
-    <ScrollView className="flex-1">
+    <Layout>
       <KeyboardAvoidingView
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
          className='min-h-full flex-column justify-center items-center'
@@ -185,7 +186,7 @@ function Login({ navigation }: any): React.JSX.Element {
             </View>
           </View>
       </KeyboardAvoidingView>
-    </ScrollView>
+    </Layout>
 
   );
 }
