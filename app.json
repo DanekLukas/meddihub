@@ -1,4 +1,8 @@
 {
   "name": "meddihub",
-  "displayName": "meddihub"
+  "displayName": "MEDDI hub",
+  "slug": "lukas.danek.meddihub",
+  "version": "0.0.1",
+  "description": "MEDDI hub.",
+  "entryPoint": "index.tsx"
 }
